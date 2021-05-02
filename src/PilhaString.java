@@ -25,6 +25,7 @@ public class PilhaString {
         NodeChar node = new NodeChar(ch);
         node.setProx(this.topo);
         this.topo = node;
+        this.nElem++;
         // 🤙
     }
 
@@ -37,6 +38,8 @@ public class PilhaString {
             this.push(st.charAt(0));
             st = st.substring(1);
         }
+        // nao ha necessidade de incrementar o nElem nesse metodo ja que ele ira chamar
+        // o metodo que trabalho char
         // 😐
     }
 
@@ -47,6 +50,7 @@ public class PilhaString {
     public char pop() {
         var atual = this.topo.getAtual();            
         this.topo = this.topo.getProx();
+        this.nElem--;
         return atual;
         // 🤔
     }
