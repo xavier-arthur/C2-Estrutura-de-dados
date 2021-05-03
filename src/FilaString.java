@@ -72,6 +72,20 @@ public class FilaString {
         // 🤷‍♂️
     }
 
+    /**
+     * @return a pilha em string em uma versao nao-formatada (sem newlines)
+     */
+    public String toStringUnformatted() {
+        NodeChar node = this.head;
+        var stringFinal = "";
+
+        while (node != null) {
+            stringFinal += node.getAtual();
+            node = node.getProx();
+        }
+        return stringFinal;
+    }
+
     @Override
     public String toString() {
         NodeChar node = this.head;

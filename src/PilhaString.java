@@ -69,6 +69,10 @@ public class PilhaString {
         return stringFinal.replace("\n", "");
     }
 
+    /**
+     * @return uma string que representa a pilha em forma vertical
+     * with newlines apos cada item
+     */
     public String mostraPilha() {
         var stringFinal = "";
 
@@ -79,6 +83,20 @@ public class PilhaString {
             node = node.getProx();
         }
 
+        return stringFinal;
+    }
+
+    /**
+     * @return a pilha em string em uma versao nao-formatada (sem newlines)
+     */
+    public String toStringUnformatted() {
+        NodeChar node = this.topo;
+        var stringFinal = "";
+
+        while (node != null) {
+            stringFinal += node.getAtual();
+            node = node.getProx();
+        }
         return stringFinal;
     }
 }

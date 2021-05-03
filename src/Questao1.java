@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
+public class Questao1 {
     
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         PilhaString stack = new PilhaString();
         String input;
@@ -29,10 +30,10 @@ public class Main {
                     System.out.printf("\n%s\n\n", stack);
                     break;
                 case 2:
-                    if (stack.toString().replace("\n", "").equals(input)) {
-                        System.out.println("São palindromos");
+                    if (stack.toStringUnformatted().equals(input)) {
+                        System.out.println("\nSão palindromos\n");
                     } else {
-                        System.out.println("nao sao palindromos");
+                        System.out.println("\nnao sao palindromos\n");
                     }
                     break;
             }
