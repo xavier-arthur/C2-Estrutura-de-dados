@@ -8,7 +8,7 @@ public class PilhaString {
         this.nElem = 0;
     }
 
-    /**
+      /**
      * @return verdadeiro se a pilha estiver vazia
      */
     public boolean eVazio() {
@@ -26,7 +26,6 @@ public class PilhaString {
         node.setProx(this.topo);
         this.topo = node;
         this.nElem++;
-        // 🤙
     }
 
     /**
@@ -40,7 +39,6 @@ public class PilhaString {
         }
         // nao ha necessidade de incrementar o nElem nesse metodo ja que ele ira chamar
         // o metodo que trabalho char
-        // 😐
     }
 
     /**
@@ -52,7 +50,6 @@ public class PilhaString {
         this.topo = this.topo.getProx();
         this.nElem--;
         return atual;
-        // 🤔
     }
 
     @Override

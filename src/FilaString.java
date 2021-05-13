@@ -14,7 +14,6 @@ public class FilaString {
      */
     public NodeChar tail() {
         return this.tail;
-        // 💯
     }
 
     /**
@@ -22,7 +21,6 @@ public class FilaString {
      */
     public NodeChar head() {
         return this.head;
-        // ⚡
     }
 
     /**
@@ -38,7 +36,6 @@ public class FilaString {
            this.tail.setProx(node); 
         } this.tail = node; this.nElem++;
 
-        // 😏
     }
 
     public void enqueue(String st) {
@@ -46,8 +43,6 @@ public class FilaString {
             this.enqueue(st.charAt(0));
             st = st.substring(1);
         }
-
-        // 🏃
     }
 
     /**
@@ -59,17 +54,14 @@ public class FilaString {
         this.head = this.head.getProx();
         this.nElem--;
         return node;
-        // 🍔 
     }
 
     public boolean eVazio() {
         return this.nElem == 0;
-        // 🙅
     }
 
     public int tamanho() {
         return this.nElem;
-        // 🤷‍♂️
     }
 
     /**
